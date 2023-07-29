@@ -2,14 +2,16 @@
 package Ship;
 
 public class Ship {
-
+	
+	private String type;
 	private int row;
 	private int square;
 
 	// constructor
-	public Ship(int row, int square) {
+	public Ship(String type,int row, int square) {
 		setRow(row);
 		setSquare(square);
+		setType(type);
 
 	}
 
@@ -27,6 +29,14 @@ public class Ship {
 
 	public void setSquare(int square) {
 		this.square = square;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
 	}
 
 }
