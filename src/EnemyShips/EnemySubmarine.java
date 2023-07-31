@@ -1,8 +1,6 @@
 package EnemyShips;
 
 public class EnemySubmarine extends EnemyShipDecorator {
-
-	
 	
 	/*
 	 * url to visualise the enemyship with an icon from a CDN link
@@ -11,18 +9,18 @@ public class EnemySubmarine extends EnemyShipDecorator {
 	private String name = "Submarine";
 	private int points = 3;
 
-	public EnemySubmarine(EnemyShip enemyship,int row, int square) {
-		super(enemyship,row, square);
+	public EnemySubmarine(EnemyShip enemyship,String type, int row, int square) {
+		super(enemyship,type, row, square);
 		setImageURL(imageURL);
 		setName(name);
 		setPoints(points);
-		
+
 	}
 
 	@Override
 	public void assemble() {
 		super.assemble();
-		System.out.print("This is a Submarine");
+		System.out.print("This is an Aircraft carrier");
 	}
 
 	public String getImageURL() {
@@ -48,6 +46,5 @@ public class EnemySubmarine extends EnemyShipDecorator {
 	public void setPoints(int points) {
 		this.points = points;
 	}
-
 
 }

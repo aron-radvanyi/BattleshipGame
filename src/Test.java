@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 import Logic.PlacerLogic;
 
 public class Test {
@@ -7,6 +9,8 @@ public class Test {
 		
 		logic.enemyShipPlacer();
 		
+		String test = logic.getTest();
+		JOptionPane.showMessageDialog(null, test);
 		
 
 	}

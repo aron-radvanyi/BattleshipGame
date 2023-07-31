@@ -11,6 +11,4 @@ public class BasicEnemyShip extends EnemyShip {
 		public void assemble() {
 			
 		}
-
-	
 }

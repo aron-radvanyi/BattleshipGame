@@ -3,8 +3,8 @@ public class EnemyShipDecorator extends EnemyShip {
 	
 	protected EnemyShip enemyShip;
 	
-	public EnemyShipDecorator(EnemyShip enemyShip, int row, int square) {
-		super(row, square);
+	public EnemyShipDecorator(EnemyShip enemyShip,String type, int row, int square) {
+		super(type,row, square);
 		this.enemyShip = enemyShip;
 	}
 	

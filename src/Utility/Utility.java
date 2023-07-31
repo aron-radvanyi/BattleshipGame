@@ -44,26 +44,23 @@ public class Utility {
 		return possibleCoordinates;
 	}
 	
-	public int randomNextInt5() {
-		return random.nextInt(5);
-	}
 	
 	public EnemyShip randomWhichEnemyShip(int row, int square) {
-		int number = randomNextInt5();
+		int number = random.nextInt(4);
 		if (number == 0) {
-			EnemyShip EnemyAircraftCarrier = new EnemyAircraftCarrier(new BasicEnemyShip(row, square), row, square);
+			EnemyShip EnemyAircraftCarrier = new EnemyAircraftCarrier(new BasicEnemyShip("EnemyAircraftCarrier",row, square),"EnemyAircraftCarrier", row, square);
 			return EnemyAircraftCarrier;
 		} else if (number == 1) {
-			EnemyShip EnemyBattleShip = new EnemyBattleShip(new BasicEnemyShip(row, square), row, square);
+			EnemyShip EnemyBattleShip = new EnemyBattleShip(new BasicEnemyShip("EnemyBattleShip",row, square),"EnemyBattleShip", row, square);
 			return EnemyBattleShip;
 		}else if (number == 2) {
-			EnemyShip EnemySubmarine = new EnemySubmarine(new BasicEnemyShip(row, square), row, square);
+			EnemyShip EnemySubmarine = new EnemySubmarine(new BasicEnemyShip("EnemySubmarine",row, square),"EnemySubmarine", row, square);
 			return EnemySubmarine;
 		}else if (number == 3) {
-			EnemyShip EnemyDestroyer = new EnemyDestroyer(new BasicEnemyShip(row, square), row, square);
+			EnemyShip EnemyDestroyer = new EnemyDestroyer(new BasicEnemyShip("EnemyDestroyer",row, square),"EnemyDestroyer", row, square);
 			return EnemyDestroyer;
 		}else {
-			EnemyShip EnemyPatrolBoat = new EnemyPatrolBoat(new BasicEnemyShip(row, square), row, square);
+			EnemyShip EnemyPatrolBoat = new EnemyPatrolBoat(new BasicEnemyShip("EnemyPatrolBoat",row, square),"EnemyPatrolBoat", row, square);
 			return EnemyPatrolBoat;
 		} 
 	}

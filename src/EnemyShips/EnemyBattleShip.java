@@ -9,11 +9,8 @@ public class EnemyBattleShip extends EnemyShipDecorator {
 	private String name = "Battleship";
 	private int points = 4;
 
-	public EnemyBattleShip(EnemyShip enemyship, int row, int square) {
-		super(enemyship, row, square);
-		setImageURL(imageURL);
-		setName(name);
-		setPoints(points);
+	public EnemyBattleShip(EnemyShip enemyship, String type, int row, int square) {
+		super(enemyship, type, row, square);
 
 	}
 

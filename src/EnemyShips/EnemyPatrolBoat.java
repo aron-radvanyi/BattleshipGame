@@ -9,8 +9,8 @@ public class EnemyPatrolBoat extends EnemyShipDecorator {
 	private String name = "Patrol Boat";
 	private int points = 1;
 
-	public EnemyPatrolBoat(EnemyShip enemyship, int row, int square) {
-		super(enemyship, row, square);
+	public EnemyPatrolBoat(EnemyShip enemyship, String type,int row, int square) {
+		super(enemyship,type, row, square);
 		setImageURL(imageURL);
 		setName(name);
 		setPoints(points);

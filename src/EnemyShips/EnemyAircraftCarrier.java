@@ -9,12 +9,9 @@ public class EnemyAircraftCarrier extends EnemyShipDecorator {
 	private String name = "Aircraft carrier";
 	private int points = 5;
 
-	public EnemyAircraftCarrier(EnemyShip enemyship,int row, int square) {
-		super(enemyship,row, square);
-		setImageURL(imageURL);
-		setName(name);
-		setPoints(points);
-		
+	public EnemyAircraftCarrier(EnemyShip enemyship, String type, int row, int square) {
+		super(enemyship,type, row, square);
+
 	}
 
 	@Override
